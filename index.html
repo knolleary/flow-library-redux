@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <title>Library - Node-RED</title>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    <link href="/css/style.min.css?d=20200825" rel="stylesheet" media="screen">
+    <link href="/css/library.css?d=20200825" rel="stylesheet" media="screen">
+    <script src="/jquery/js/jquery-1.9.1.js"></script>
+    <script src="/jquery/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/js/utils.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="brand"><a href="/">Node-RED</a></div>
+            <ul class="navigation">
+                <li><a href="https://nodered.org">home</a></li>
+                <li><a href="https://nodered.org/about">about</a></li>
+                <li><a href="https://nodered.org/blog">blog</a></li>
+                <li><a href="https://nodered.org/docs/">documentation</a></li>
+                <li><a href="https://discourse.nodered.org/">forum</a></li>
+                <li class="current"><a href="/">flows</a></li>
+                <li><a href="https://github.com/node-red">github</a></li>
+            </ul>
+            <a href="#" class="menu"><i class="icon-menu"></i></a>
+        </div>
+    </div>
+    <div class="library">
+
+        <form id="search-form" method="get" action="/search">
+        <div class="toolbar">
+          <div class="grid">
+            <div class="col-1-1">
+                <div style="position: relative">
+                    <div class="gist-filter">
+                        <input autocomplete="off" id="filter-term" name="term" class="gist-filter-input" type="text" value="" placeholder="Search library"/>
+                        <span class="filter-term-spinner"></span>
+                    </div>
+                    <span class="buttons">
+                        <a href="/add"><i class="icon-plus"></i></a>
+                        <a class="signin" href="/login"><span>Sign in with <b>GitHub</b></span><i class="icon-github"></i></a>
+                        <script>$(function() { $(".signin").attr('href','/login?return='+window.location.pathname);});</script>
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+        </form>
+
+
+
+
+
+        <div class="grid">
+            <div class="front-hero">
+                <div class="col-2-3" style="position:relative; background: #aa4444; border-top-right-radius:20px;border-bottom-left-radius:10px;">
+                    <div>
+                        <h2>Node-RED Library</h2>
+                        <p>Find new nodes, share your flows and see what other people have done with Node-RED.</p>
+                    </div>
+                </div>
+                <div class="col-1-3" style="position: relative">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="links">
+        <div class="grid">
+            <div class="col-1-4">
+                <p><a href="https://nodered.org">Node-RED</a>: Low-code programming for event-driven applications.</p>
+            </div>
+            <div class="col-1-4">
+                <ul>
+                    <li><a href="https://github.com/node-red">GitHub</a></li>
+                    <li><a href="https://www.npmjs.com/package/node-red">npm</a></li>
+                    <li><a href="https://nodered.org/docs">Documentation</a></li>
+                    <li><a href="https://nodered.org/docs/api">APIs</a></li>
+                </ul>
+            </div>
+            <div class="col-1-4">
+                <ul>
+                    <li><a href="https://flows.nodered.org">Flow Library</a></li>
+                    <li><a href="https://nodered.org/about/">About</a></li>
+                    <li><a href="https://nodered.org/about/conduct">Code of Conduct</a></li>
+                    <li><a href="https://nodered.org/about/community">Community</a></li>
+                </ul>
+            </div>
+            <div class="col-1-4">
+                <ul>
+                    <li><a href="https://nodered.org/blog">Blog</a></li>
+                    <li><a href="https://twitter.com/nodered">Twitter</a></li>
+                    <li><a href="https://discourse.nodered.org">Forum</a></li>
+                    <li><a href="https://nodered.org/slack">Slack</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid openjs">
+            <div class="col-1-4">
+                <a href="https://openjsf.org"><img class="openjs-logo" src="https://nodered.org/images/openjs_foundation-logo.svg" /></a>
+            </div>
+            <div class="col-3-4">
+                <p>Copyright <a href="https://openjsf.org">OpenJS Foundation</a> and Node-RED contributors. All rights reserved. The <a href="https://openjsf.org">OpenJS Foundation</a> has registered trademarks and uses trademarks.  For a list of trademarks of the <a href="https://openjsf.org">OpenJS Foundation</a>, please see our <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> and <a href="https://trademark-list.openjsf.org">Trademark List</a>.  Trademarks and logos not indicated on the <a href="https://trademark-list.openjsf.org">list of OpenJS Foundation trademarks</a> are trademarks&trade; or registered&reg; trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</p>
+                <p><a href="https://openjsf.org">The OpenJS Foundation</a> | <a href="https://terms-of-use.openjsf.org">Terms of Use</a> | <a href="https://privacy-policy.openjsf.org">Privacy Policy</a> | <a href="https://bylaws.openjsf.org">OpenJS Foundation Bylaws</a> | <a href="https://trademark-policy.openjsf.org">Trademark Policy</a> | <a href="https://trademark-list.openjsf.org">Trademark List</a> | <a href="https://www.linuxfoundation.org/cookies">Cookie Policy</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+      $(function() {
+        $(".menu").click(function(e) {
+            var s = $(".navigation").slideToggle('hide');
+            e.preventDefault();
+        });
+      });
+    </script>
+    </body>
+    </html>
